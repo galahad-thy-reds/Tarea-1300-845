@@ -9,11 +9,11 @@
         /// <summary>
         /// Propiedad que indica el nombre de la especie marina
         /// </summary>
-        public string? NombreEspecie { get; set; }
+        public string? Nombre { get; set; }
         /// <summary>
         /// Propiedad que indica el tipo de agua para la especie marina (agua dulce, agua salada)
         /// </summary>
-        public string? TipoAgua { get; set; }
+        public string? TipoDeAgua { get; set; }
         /// <summary>
         /// Propiedad que indica si esta especie tiene aletas o no
         /// </summary>
