@@ -9,5 +9,11 @@ namespace Tarea.AccesoDatos.Data
         #region Atributos
         private readonly IMemoryCache _cache = cache;
         #endregion
+
+        #region Metodos privados
+        #endregion
+
+        #region Metodos publicos
+        #endregion
     }
 }
