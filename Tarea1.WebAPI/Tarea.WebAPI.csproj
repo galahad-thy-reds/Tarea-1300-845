@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Tarea1.AccesoDatos\Tarea.AccesoDatos.csproj" />
     <ProjectReference Include="..\Tarea1.Entidades\Tarea.Entidades.csproj" />
   </ItemGroup>
