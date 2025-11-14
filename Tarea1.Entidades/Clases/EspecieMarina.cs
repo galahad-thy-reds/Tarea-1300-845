@@ -1,13 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Tarea.Entidades.Enums;
 
 namespace Tarea.Entidades.Clases
 {
+    /// <summary>
+    /// Representa una especie marina con sus propiedades.
+    /// </summary>
     public class EspecieMarina
     {
         /// <summary>
         /// Identificador unico de la especie
         /// </summary>
-        public int Id { get; set; } = System.Random.Shared.Next(1, 1000000);
+        [Required(ErrorMessage = "Por favor, indique el ID de la especie marina")]
+        public int Id { get; set; }
         /// <summary>
         /// Propiedad que indica el nombre de la especie marina
         /// </summary>
@@ -40,6 +45,6 @@ namespace Tarea.Entidades.Clases
         ///  Identificador unico del tipo de especie marina.
         /// </summary>
         [Required(ErrorMessage = "Por favor, indique el tipo de especie marina de la especie")]
-        public TipoEspecieMarina? Tipo { get; set; }
+        public TipoOrganismo? TipoEspecie { get; set; }
     }
 }

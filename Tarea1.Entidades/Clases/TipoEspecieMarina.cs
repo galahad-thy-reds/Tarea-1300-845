@@ -3,6 +3,9 @@ using Tarea.Entidades.Enums;
 
 namespace Tarea.Entidades.Clases
 {
+    /// <summary>
+    /// Representa un tipo de especie marina con sus propiedades.Utiliza el tipo fijo de organismo marino como clave unica.
+    /// </summary>
     public class TipoEspecieMarina
     {
         /// <summary>
