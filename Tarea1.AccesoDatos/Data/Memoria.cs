@@ -89,6 +89,29 @@ namespace Tarea.AccesoDatos.Data
             if (EstaVacioElCache("EspeciesMarinas"))
             {
                 resultado = [];
+
+                resultado.Add(new EspecieMarina()
+                {
+                    Id = 1,
+                    Nombre = "Fitoplancton",
+                    TipoDeAgua = "Agua Salada",
+                    TieneAletas = false,
+                    RespiraFueraDeAgua = true,
+                    PesoKilos = 0.01,
+                    TipoEspecie = TipoOrganismo.OrganismosPlanctonicos
+                });
+
+                resultado.Add(new EspecieMarina()
+                {
+                    Id = 2,
+                    Nombre = "Coral Marino",
+                    TipoDeAgua = "Agua Salada",
+                    TieneAletas = false,
+                    RespiraFueraDeAgua = false,
+                    PesoKilos = 15,
+                    TipoEspecie = TipoOrganismo.OrganismosBentonicos
+                });
+
                 _cache.Set("ListaEspeciesMarinas", resultado);
             }
             else
