@@ -68,7 +68,7 @@ namespace Tarea.AccesoDatos.Data
                 {
                     Id = TipoOrganismo.OrganismosBentonicos,
                     Nombre = "Organismos Bentonicos:",
-                    Descripcion = "en el fondo marino, como algas, moluscos, corales y estrellas de mar"
+                    Descripcion = "Vive en el fondo marino, como algas, moluscos, corales y estrellas de mar"
                 });
 
                 _cache.Set("ListaTiposEspeciesMarinas", resultado);
